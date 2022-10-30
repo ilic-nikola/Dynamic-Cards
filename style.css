@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yrsa', serif;
+} 
+
+header {
+    display: flex;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Mountains-1412683.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+    width: auto;
+    align-content: center;
+}
+
+h1 {
+    margin: auto;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(55px, 8vw, 110px);
+    filter: drop-shadow(1px 1px 0.03em #1c1c5f)
+}
+
+.heading {
+    display: flex;
+    position: relative;
+}
+
+.heading h2 {
+    margin: 6vh 0 1vh 5vw;
+    color: white;
+    font-size: clamp(30px, 4vw, 50px);
+    font-weight: 400;
+    height: 8vh;
+    border-bottom: 1px solid white;
+    width: 90vw;
+}
+
+#cards-container {
+    margin: auto;
+    width: 90vw;
+    padding-bottom: 10vh;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrapper {
+    display: inline-flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2vw;
+    overflow: hidden;
+    grid-area: auto / auto / auto / auto;
+}
+
+.wrapper h3 {
+    padding: 2vh 0vw;
+    font-size: clamp(25px, 2vw, 35px);
+    font-weight: 400;
+}
+
+.card-body {
+    background-color: #c5998c;
+    border-radius: 18px;
+    max-width: 30vw;
+    font-weight: 200;
+    font-size: clamp(15px, 1.2vw, 20px);
+    padding: 1.6em 2.2em;
+    line-height: 2em;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    background: #2C2C2C; 
+}
+
+@media screen and (max-width: 720px) {
+
+    #output {
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
+    .wrapper {
+        margin: 3vw;
+    }
+
+    .card-body {
+        min-width: 50vw;
+    }
+}
